@@ -6,7 +6,16 @@
 
 body{
     height:100vh;
-    width:100vw;
+}
+
+.bgimage{
+    height:55vh;
+    display:flex;
+    background-image: url(pexels-felix-mittermeier-956981.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    justify-content:center;
+    align-items:center;
 }
 
 .container{
@@ -20,16 +29,20 @@ a{
 }
 
 .header_container{
-    margin-bottom: 2.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
 
 .header_title{
     text-align:center;
-    margin-bottom:1rem;
-    font-size:1.4;
+    margin-bottom:3rem;
+    font-size:4.1rem;
     font-weight:600;
     line-height: 2rem;
     transition:1.5s ease-out;
+    color:aliceblue;
+    
 }
 
 .header_title:hover{
@@ -38,9 +51,11 @@ a{
 
 .header_desc{
     max-width:550px;
-    color:rgb(135, 132, 132);
+    color:rgb(250, 247, 247);
     text-align: center;
     margin:auto;
+    font-size:21px;
+    font-weight: 500;
 }
 
 .main_container{
