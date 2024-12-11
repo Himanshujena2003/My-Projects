@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+}
+
+.bgimage{
+    height:55vh;
+    display:flex;
+    background-image: url(pexels-felix-mittermeier-956981.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    max-width:72vw;
+    padding:2rem 1rem;
+    margin:auto;
+}
+
+a{
+    text-decoration:none;
+}
+
+.header_container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.header_title{
+    text-align:center;
+    margin-bottom:3rem;
+    font-size:4.1rem;
+    font-weight:600;
+    line-height: 2rem;
+    transition:1.5s ease-out;
+    color:aliceblue;
+    
+}
+
+.header_title:hover{
+    transform:scale(1.2);
+}
+
+.header_desc{
+    max-width:550px;
+    color:rgb(250, 247, 247);
+    text-align: center;
+    margin:auto;
+    font-size:21px;
+    font-weight: 500;
+}
+
+.main_container{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    gap:0.9rem;
+}
+
+ @media (min-width:650px){
+    .main_container{
+        grid-template-columns:repeat(2 , 1fr);
+    }
+}
+@media (min-width:1080px){
+    .main_container{
+        grid-template-columns:repeat(3 , 1fr);
+    }
+}
+@media (min-width:1240px){
+    .main_container{
+        grid-template-columns:repeat(4 , 1fr);
+    }
+}
+
+.card_container{
+    display:flex;
+    border:1px solid rgb(163, 162, 162);
+    border-radius:5px;
+    flex-direction:column;
+    overflow:hidden;
+
+}
+
+.card_image_container{
+    position:relative;
+    overflow:hidden;
+    height:8rem;
+}
+
+.card_image{
+    object-fit:cover;
+    position:absolute;
+    object-position:center;
+    height:100%;
+    width:100%;
+}
+
+.card_title_container{
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+    gap:4px;
+}
+
+.card_container:hover .card_image{
+    transform:scale(1.1);
+    transition-duration:230ms;
+}
+
+.card_title{
+    font-size:0.9rem;
+    font-weight:600px;
+    line-height:1.5rem;
+    font-style:bold;
+    color:black;
+}
+
+.card_desc{
+    font-size:0.8rem;
+    color:rgb(103, 102, 102)
+}
+
+.card_title:hover {
+    color:rgb(82, 1, 211);
+}
+
+.card_footer_container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left:0.7rem;
+    margin-bottom: 0.9rem;
+}
+
+.author_container{
+    display:flex;
+    height:2rem;
+    gap:5px;
+}
+
+.avtar_container{
+    display:flex;
+    height:1.9rem;
+    width:1.9rem;
+    border:1px gray solid;
+    border-radius:50%;
+    background-color: rgb(243, 242, 242);
+    justify-content:center;
+    align-items:end;
+    overflow:hidden;
+    align-self:end;
+}
+.avtar{
+    height:100%;
+    width:100%;
+}
+
+.info_container{
+    display:flex;
+    flex-direction:column;
+    font-size:0.8rem;
+    color:rgb(103, 99, 99);
+    align-self:end;
+}
+
+.card_tag_container{
+    display:flex;
+    margin-right:0.5rem;
+    font-size:0.8rem;
+    color:rgb(129, 126, 126);
+    border:1px rgb(115, 113, 113) solid;
+    border-radius:5px;
+    height:1.5rem;
+    align-items:center;
+    padding:6px;
+}
+
+.author_name{
+    color:rgb(112, 112, 218);
+    font-weight:500;
+}
+
