@@ -6,7 +6,7 @@ const items = [
     { name: "Speaker", price: 99, category: "electronics",url:"https://images.pexels.com/photos/4893862/pexels-photo-4893862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
     { name: "T-Shirt", price: 25, category: "fashion",url:"https://images.pexels.com/photos/1311590/pexels-photo-1311590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
     { name: "Jeans", price: 50, category: "fashion",url:"https://images.pexels.com/photos/1082528/pexels-photo-1082528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
-    { name: "Jacket", price: 100, category: "fashion",url:"https://images.pexels.com/photos/8148587/pexels-photo-8148587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
+    { name: "Jacket", price: 100, category: "fashion",url:"https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
     { name: "Sneakers", price: 80, category: "fashion",url:"https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
     { name: "Handbag", price: 60, category: "fashion",url:"https://images.pexels.com/photos/8148587/pexels-photo-8148587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
     { name: "Sofa", price: 500, category: "home items",url:"https://images.pexels.com/photos/3757055/pexels-photo-3757055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" },
