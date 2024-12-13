@@ -28,19 +28,21 @@ let option = document.querySelector("select option");
 let select = document.querySelector("select");
 
 
-items.forEach((product)=>{
-    const card = document.createElement("div")
-    card.classList.add("card")
-    card.setAttribute("id",`${product.category}`)
-    card.innerHTML=`
-       <div id="upper"><img src=${product.url} alt=""></div>
-        <div id="lower">
-            <h3 id="name">${product.name}</h3>
-            <p id="price">Price: ${product.price}</p>
-        </div>
-    `;
-    main.appendChild(card);
-})
+function allCards(){
+    items.forEach((product)=>{
+        const card = document.createElement("div")
+        card.classList.add("card")
+        card.setAttribute("id",`${product.category}`)
+        card.innerHTML=`
+           <div id="upper"><img src=${product.url} alt=""></div>
+            <div id="lower">
+                <h3 id="name">${product.name}</h3>
+                <p id="price">Price: ${product.price}</p>
+            </div>
+        `;
+        main.appendChild(card);
+    })
+}
 
 
 function renderCard(){
@@ -48,19 +50,7 @@ function renderCard(){
         main.innerHTML=""
         let value = select.value;
         if(value=="All"){
-            items.forEach((product)=>{
-                const card = document.createElement("div")
-                card.classList.add("card")
-                card.setAttribute("id",`${product.category}`)
-                card.innerHTML=`
-                   <div id="upper"><img src=${product.url} alt=""></div>
-                    <div id="lower">
-                        <h3 id="name">${product.name}</h3>
-                        <p id="price">Price: ${product.price}</p>
-                    </div>
-                `;
-                main.appendChild(card);
-            })
+            allCards();
         }
         else{
             items.forEach((product)=>{
@@ -83,5 +73,6 @@ function renderCard(){
     })
 }
 
+allCards();
 renderCard();
 
